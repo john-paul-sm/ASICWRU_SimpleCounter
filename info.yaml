@@ -1,10 +1,10 @@
 # Tiny Tapeout project information
 project:
-  title:        "CWRU CHIPS - Simple Counter with 7-segment Display"
+  title:        "CWRU CHIPS Simple Counter with 7-segment Display"
   author:       "Andrew Chen, John Paul Magbitang"
   discord:      "andr.ewww10, joopyyy"
   description:  "Simple counter demo on a RISC-V CPU with 7-segment display output"
-  language:     "Verilog" t
+  language:     "Verilog"
   clock_hz:     5
 
   tiles: "1x2"
