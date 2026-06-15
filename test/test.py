@@ -7,7 +7,10 @@ from cocotb.clock import Clock
 from cocotb.triggers import ClockCycles, RisingEdge
 
 PRNT_OPCODE = 0x7F
-GL_TEST = os.environ.get("GL_TEST", "0") == "1"
+GL_TEST = (
+  os.environ.get("GL_TEST", "0") == "1"
+  or os.environ.get("GATES", "").lower() in ("yes", "1", "true")
+)
 
 NUM_TERMS = 10  # how many counter values to verify
 
